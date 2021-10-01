@@ -1,0 +1,138 @@
+/// QUESTION NO 2///
+ANSWER:
+void main(){
+ multiply(5);
+}
+void multiply(number){
+  var number = 5;
+  for(var i = 1;i<=10;i ++){
+    print("5 x $i = ${5*i}");
+  }
+}
+/// QUESTION NO 3///
+ANSWER:
+void main(){
+  divide(5);
+}
+void divide(number){
+  List lst = [2,4,6,8,9];
+  for(var i in lst){
+    var div = number / i;
+    print("$number/$i = $div");
+  }
+}
+/// QUESTION NO 4///
+ANSWER:
+
+void main() {
+  var student_Name = ["nameera","owais","kanza","anila","ali"];
+  var english = [90,70,95,80,45];
+  var urdu = [80, 75, 70, 78, 30];
+  var islamiat = [85, 80, 84, 80, 50];
+  var maths = [100, 74, 60, 72, 55];
+  var chemistry = [95,85,70,80,35];
+  
+  for (var i=0; i < student_Name.length; i++){
+    detail(student_Name[i], english[i], urdu[i], islamiat[i], maths[i], chemistry[i]);
+  }
+}
+
+void detail(var student_Name, english, urdu, islamiat, maths, chemistry,)
+{
+  int total_Marks=500;
+  int obtained_Marks = english+urdu+islamiat+maths+chemistry;
+  print ("${student_Name} has obtained ${obtained_Marks} marks out of ${total_Marks} ");
+  
+  double percentage = obtained_Marks/total_Marks*100;
+  
+  if (percentage >= 80) {
+    print('${student_Name} has ${percentage}% with Grade A+\n    * * * *');
+  }
+  
+  else if (percentage >= 70) {
+    print('${student_Name} has ${percentage}% with Grade A\n    * * * *');
+  } 
+  
+  else if (percentage >= 60) {
+    print('${student_Name} has ${percentage}% with Grade B\n    * * * *');
+  }
+  
+  else if (percentage >= 50) {
+    print('${student_Name} has ${percentage}% with Grade C\n    * * * *');
+  }
+  
+  else if (percentage >= 40) {
+    print('${student_Name} has ${percentage}% with Grade D\n    * * * *');
+  }
+  
+  else if (percentage < 40) {
+    print('${student_Name} has ${percentage}% with Grade F\n    * * * *');
+  }
+  
+}
+
+///  QUESTION NO 5 ///
+ANSWER:
+void main(){
+  Mobile m = Mobile();
+  m.function();
+}
+class Mobile{
+  function(){
+    print("Iphone");
+  }
+}
+///  QUESTION NO 6 ///
+ANSWER:
+void main(){
+  Name obj = Name();
+  obj.show_my_name();
+  
+}
+class Name{
+  show_my_name(){
+    print("My name is Nameera");
+  }
+
+}
+///  QUESTION NO 7 ///
+ANSWER:
+main() {
+  Biodata d = Biodata(name: "Nameera",age: 20,education: "BS In Software Engineering");
+  d.displayBiodata();
+}
+
+class Biodata {
+  String name;
+  int age;
+  var education;
+
+ 
+  Biodata({required this.name, required this.age,required this.education});
+
+
+  void displayBiodata() {
+    print("My name is ${name}");
+    print("My age is ${age}");
+    print("My education is ${education}");
+  }
+}
+///  QUESTION NO 8///
+ANSWER:
+void main(){
+   Author a  = Author();
+  a.display();
+  a.show();
+}
+
+class Book{
+  display(){
+    print("This Is Poetry Book");
+  }
+}  
+class Author extends Book{
+  show(){
+    print("The Author of Book is William Shakespare");
+  }
+}  
+  
